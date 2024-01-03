@@ -26,5 +26,27 @@ public class MathOperation{
     public static MathOperationInterface multiply = (a,b) -> a*b;
     public static MathOperationInterface divide = (a,b) -> (b!=0)? a/b: Double.NaN;
 
+    /**
+     * Main method to print all the lambda expressions values.
+     * @param args
+     */
+    public static void main(String[] args){
+        /**
+         * Declared all the method's variables for inputs.
+         */
+        double result = add.calculate(5,6);
+        double result1 = subtract.calculate(9,6);
+        double result2 = multiply.calculate(5,3);
+        double result3 = divide.calculate(6,3);
+
+        /**
+         * Printing all the function's values.
+         */
+        System.out.println("Addition: "+result);
+        System.out.println("Subtraction: "+result1);
+        System.out.println("Multiplication: "+result2);
+        System.out.println("Division: "+result3);
+    }
+
 }
 
